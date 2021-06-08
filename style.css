@@ -45,9 +45,13 @@ main {
     gap:4px;
 }
 
-footer{
+footer {
     display: grid;
     width: 100vw;
+}
+
+article {
+    max-width: 46rem;
 }
 
 .images {
