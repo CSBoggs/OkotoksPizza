@@ -10,7 +10,25 @@
 
 body {
     display: grid;
-    width:auto;
+    width: auto;
+}
+
+/* MOBILE SCREEN */
+@media only screen and (min-width:600px){
+    #div1 > iframe {
+        height: 50vh;
+        width: 100%;
+    }
+    p {
+        font-size: 2rem ;
+    }
+    #div4 > img {
+        width: 95%;
+        height: auto;
+        padding-left: 3%;
+        object-fit: cover;
+        visibility: visible;
+    }
 }
 
 nav {
@@ -19,39 +37,43 @@ nav {
     grid-template-rows: 10vh;
     place-items: center;
     line-height: 10vh;
+    overflow-y: scroll;
     width: 100%;
     gap:4px;
 }
 
-header {
+#topnav {
     position: sticky;
     top: 0%;
     left: 0%;
+    width: 100%;
 }
 
 #div1 {
     display: grid;
     place-items: center;
-    width: 100%;
+    padding-left: 3%;
+    width: 94.7%;
 }
 
-main {
+.mainview {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     place-items: center;
-    width: 100%;
+    width: 95%;
     padding: 5px;
+    padding-left: 3%;
     gap:4px;
 }
 
-footer {
+.bottom {
     display: grid;
     width: 100vw;
 }
 
 article {
-    max-width: 46rem;
+    max-width: 44rem;
 }
 
 .images {
@@ -59,26 +81,27 @@ article {
 }
 
 .images > img {
+    display: grid;
+    place-items: center;
     width: 100%;
     height: auto;
     object-fit: cover;
 }
 
-#div4 {
-    transition: transform 2s;
-}
-
-#div4 > img {
+.wideimages {
     display: grid;
-    width: 100%;
-    height: 600px;
-    object-fit: cover;
+    height: 25%;
+    width: auto;
+    visibility: hidden;
 }
 
 .vid > iframe {
-    height: 60vh;
+    height: 15vh;
     width: 100%;
 }
+
+/* TABLET SCREEN */
+@media only screen and (min-width:1000px){
 
 header {
     position: sticky;
@@ -86,8 +109,8 @@ header {
     left: 0;
 }
 
-.aboutus > p {
-    font-size: 2rem;
+.aboutus {
+    font-size: 1rem;
     margin: 12px;
 }
 
@@ -110,17 +133,11 @@ header {
 
 .btn:hover {
     color: rgb(19, 255, 164);
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     text-decoration: none;
     text-shadow: 0 0 0.5em, 0 0 2.5em rgb(0, 0, 0);
     transition: ease 200ms;
 }
-
-.wideimages:hover{
-    transform: scale(1.5);
-}
-
-
 
 a:visited {
     color:  rgb(255, 255, 255);
@@ -129,7 +146,4 @@ a:visited {
 a:link {
     color: rgb(255, 255, 255);
 }
-
-#topnav {
-    background-blend-mode: ;
 }
