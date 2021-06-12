@@ -1,3 +1,6 @@
+$ThemeColour: rgb(19, 255, 164);
+
+
 * {
     background-color: rgb(34, 34, 34);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -95,9 +98,11 @@ article {
     visibility: hidden;
 }
 
-.vid > iframe {
-    height: 15vh;
-    width: 100%;
+.vid {
+    iframe {
+        height: 15vh;
+        width: 100%;
+    }
 }
 
 /* TABLET SCREEN */
@@ -119,20 +124,24 @@ header {
 }
 
 @keyframes Shimmer {
-    0% {outline: 3px solid rgb(19, 255, 164)}
+    0% {outline: 3px solid $ThemeColour}
     25% {outline: 3px solid rgb(95, 182, 148)}
     50% {outline: 3px solid rgb(53, 99, 81)}
     75% {outline: 3px solid rgb(87, 156, 130)}
-    100% {outline: 3px solid rgb(19, 255, 164)}
+    100% {outline: 3px solid $ThemeColour}
 }
 
-
-.aboutus:hover {
+@mixin ShimmerAnimation() {
     animation: Shimmer 5s infinite;
 }
 
+.aboutus:hover {
+    @include ShimmerAnimation();
+    // animation: Shimmer 5s infinite;
+}
+
 .btn:hover {
-    color: rgb(19, 255, 164);
+    color: $ThemeColour;
     font-size: 1.3rem;
     text-decoration: none;
     text-shadow: 0 0 0.5em, 0 0 2.5em rgb(0, 0, 0);
