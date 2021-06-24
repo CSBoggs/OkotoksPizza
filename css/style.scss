@@ -1,0 +1,81 @@
+@import 'variables';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: grid;
+    width: 100vw;
+}
+
+/* Navigation Bar Styling*/
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 10vh;
+    width: 100vw;
+    @include navBarGrad;
+    .burgerIcon img {
+        height: 10vh;
+        width: auto;
+    }
+    .logo {
+        min-height: 15vh;
+        width: auto;
+        float: top left;
+        z-index: 1;
+        img {
+            width: 150%;
+        }
+    }
+    .navLinks {
+        list-style: none;
+    }
+    .tele {
+        flex-grow: 4fr;
+        line-height: 10vh;
+    }
+}
+
+/* Hamburger Menu Toggle */
+
+#menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    @include navBarGrad;
+    height: 10vh;
+    width: 40vw;
+    justify-items: center;
+}
+
+#menuToggle:checked ~ div {
+    display: block;
+}
+
+#menuToggle {
+    display: none;
+}
+
+label {
+    user-select: none;
+}
+
+/* Hero Image and Text */
+
+.heroImage {
+    width: 100%;
+    height: auto;
+}
+
+.hero {
+    height: 60vh;
+    width: 100vw;
+}
