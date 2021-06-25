@@ -1,4 +1,5 @@
 /* Gradients */
+/* Colours */
 * {
   padding: 0;
   margin: 0;
@@ -11,6 +12,16 @@ body {
   display: -ms-grid;
   display: grid;
   width: 100vw;
+}
+
+a:link {
+  color: #EFE9DA;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #EFE9DA;
+  text-decoration: none;
 }
 
 /* Navigation Bar Styling*/
@@ -50,27 +61,34 @@ body {
 
 .navbar .navLinks {
   list-style: none;
+  text-shadow: 3px 4px black;
+  line-height: 5vh;
 }
 
 .navbar .tele {
-  -webkit-box-flex: 4fr;
-      -ms-flex-positive: 4fr;
-          flex-grow: 4fr;
+  font-size: 1.2rem;
   line-height: 10vh;
+  text-shadow: 3px 4px black;
+}
+
+.navbar .tele a {
+  text-decoration: none;
 }
 
 /* Hamburger Menu Toggle */
 #menu {
   display: none;
+  font-size: 1.2rem;
+  text-align: center;
   position: fixed;
   top: 0;
-  right: 0;
+  right: 7vw;
   background: #020024;
   background: -webkit-gradient(linear, left top, left bottom, from(#020024), color-stop(32%, #554266), to(#857694));
   background: linear-gradient(180deg, #020024 0%, #554266 32%, #857694 100%);
-  height: 10vh;
-  width: 40vw;
-  justify-items: center;
+  height: 15vh;
+  width: 150px;
+  border: 2px solid #EFE9DA;
 }
 
 #menuToggle:checked ~ div {
@@ -89,13 +107,30 @@ label {
 }
 
 /* Hero Image and Text */
-.heroImage {
+.hero {
+  height: 60vh;
+  width: 100vw;
+  position: absolute;
+  top: 10vh;
+}
+
+.hero .heroImage {
   width: 100%;
   height: auto;
 }
 
-.hero {
-  height: 60vh;
-  width: 100vw;
+.hero .heroText {
+  color: #EFE9DA;
+  text-shadow: 3px 4px black;
+  font-size: 5vw;
+  text-align: center;
+  position: absolute;
+  top: 20vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.hero .heroText span {
+  color: #A87991;
 }
 /*# sourceMappingURL=style.css.map */
