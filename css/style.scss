@@ -10,6 +10,7 @@
 body {
     display: grid;
     width: 100vw;
+    @include aboutUsGrad
 }
 
 a:link {
@@ -32,16 +33,13 @@ a:visited {
     @include navBarGrad;
     .burgerIcon img {
         height: 10vh;
-        width: auto;
+        max-width: 15vw;
     }
     .logo {
         min-height: 15vh;
         width: auto;
         float: top left;
         z-index: 1;
-        img {
-            width: 150%;
-        }
     }
     .navLinks {
         list-style: none;
@@ -49,11 +47,13 @@ a:visited {
         line-height: 5vh;
     }
     .tele {
-        font-size: 1.2rem;
+        font-size: 4vw;
         line-height: 10vh;
         text-shadow: 3px 4px black;
+        
         a {
             text-decoration: none;
+            white-space: initial;
         }
     }
 }
@@ -88,9 +88,8 @@ label {
 /* Hero Image and Text */
 
 .hero {
-    height: 60vh;
-    width: 100vw;
-    position: absolute;
+    height: auto;
+    min-width: 100vw;
     top: 10vh;
     .heroImage {
         width: 100%;
@@ -102,11 +101,25 @@ label {
         font-size: 5vw;
         text-align: center;
         position: absolute;
-        top: 20vh;
+        top: 30vh;
         margin-left: 5vw;
         margin-right: 5vw;
         span {
             color: $lilac;
         }
+    }
+}
+
+/* Social Media Links*/
+
+.socials {
+    display: flex;
+    flex-direction: row-reverse;
+    max-height: 10vh;
+    position: relative;
+    bottom: 60%;
+    .sLinkImage {
+        width: 10vw;
+        padding-right: 1ch;
     }
 }
