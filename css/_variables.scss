@@ -15,3 +15,8 @@ $purple: #857694;
 $lilac: #A87991;
 $orange: #FECC9C;
 $darkorange: #F89883;
+
+/* Text Decorations */
+@mixin shadow() {
+    text-shadow: 2px 2px black;
+}
