@@ -47,7 +47,7 @@ body {
 .navbar .burgerIcon img {
   height: 10vh;
   max-width: 15vw;
-  padding-right: 3vw;
+  padding-right: 5vw;
   cursor: pointer;
 }
 
@@ -240,6 +240,8 @@ h2 {
 }
 
 .menuItems p {
+  -ms-grid-column-align: right;
+      justify-self: right;
   text-align: right;
   color: #0c0c0c;
   text-shadow: none;

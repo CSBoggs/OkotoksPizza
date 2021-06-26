@@ -1,6 +1,11 @@
 @import 'variables';
 @import 'mixins';
 
+html {
+    scroll-behavior: smooth;
+}
+
+/* Default Styles */
 @include Defaults;
 
 /* Navigation Bar Styling*/
@@ -79,9 +84,9 @@
         display: none;
     }
     .horzLine {
-        height: 0.4vh;
+        height: 0.6vh;
         border-radius: 12pt;
-        background-color: $cream;
+        background-color: #EFE9DA;
         box-shadow: 2px 2px 3px rgba(50,50,50,0.75);
         margin-left: 5vh;
         margin-right: 5vh;
@@ -100,8 +105,29 @@
         #interior {
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
         }
+}
 
+@media screen and (min-width: 600px) {
+.aboutUs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    width: 100vw;
+    position: relative;
+    bottom: 4ch;
+}
+
+
+/* To Top of Page */
+.caret {
+    display: flex;
+    width: 100vw;
+    flex-direction: row-reverse;
+    justify-items: flex-end;
+    height: 5vh;
+    padding-right: 5vw;
 }
 
 /* Footer */
-@include footerstlye;
+@include footerstyle;
+}
