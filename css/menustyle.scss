@@ -1,63 +1,143 @@
 @import 'variables';
 @import 'mixins';
+
 /* Default Styling */
-@include Defaults;
+* {
+    padding: 0;
+    margin: 0; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a:link {
+    color: $cream;
+    text-decoration: none;
+}
+a:visited {
+    color: $cream;
+    text-decoration: none;
+}
+
+body {
+    background-color: #FFDCBB;
+}
 
 /* Navigation Bar Styling*/
 @include Navbar;
 
+/* Page Style */
+.tabContainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    background: rgb(133,117,148);
+    background: linear-gradient(180deg, rgba(133,117,148,1) 0%, rgba(168,121,145,1) 75%);
+}
+
 /* Subnavigation Tab Bar */
+nav .subnavbar {
+    width: 100vw;
+    margin-left: 0;
+}
 
+h2 {
+    @include shadow;
+    text-transform: uppercase;
+    color: $cream;
+}
+.tabs {
+    width: 95vw;
+    display: block;
+    margin: auto;
+    position: relative;
+}
 
+.tabs .tab {
+    float: right;
+    display: block;
+}
 
+.tabs .tab>input[type="radio"] {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+}
 
+.tabs .tab>label {
+    display: block;
+    padding: 8px 14px;
+    font-size: 22px;
+    border-radius: 6pt 6pt 0 0;
+    @include shadow;
+    text-transform: uppercase;
+    cursor: pointer;
+    position: relative;
+    color: $cream;
+    @include menuGrad;
+}
 
+.tabs .content {
+    display: none;
+    overflow: hidden;
+    width: 95vw;
+    position: absolute;
+    top: 56px;
+    left: 0;
+    background: $darkcream;
+    color: $cream;
+    opacity: 0;
+    transition: opacity 250ms ease-out;
+}
 
+.tabs>.tab>[id^="tab"]:checked + label {
+    top: 0px;
+    color: $notblack;
+    text-shadow: none;
+    background: rgb(239,233,218);
+    background: linear-gradient(180deg, rgba(239,233,218,1) 0%, rgba(255,220,187,1) 100%);
+}
 
+.tabs>.tab>[id^="tab"]:checked ~ [id^="tab-content"] {
+    display: block;
+    opacity: 1;
+    transition: opacity 250ms ease-out;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Tab content grid style */
+.menuGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1ch;
+    margin-right: 0.5ch;
+    }
+    .menuItems {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto;
+        @include menuItemGrad;
+        border: 1px solid rgba(50,50,50,0.75);
+        border-radius: 12pt;
+        box-shadow: 2px 2px 3px rgba(50,50,50,0.75);
+        place-items: center;
+        padding: 0.8ch;
+        gap: 4ch;
+        h2 {
+            justify-self: left
+        }
+        p {
+            text-align: right;
+            color: $notblack;
+            text-shadow: none;
+            font-size: 0.8rem;
+        }
+}
 
 /* Footer */
-@include footerstlye;
+footer {
+    width: 100%;
+    height: 20px;
+    color: $notblack;
+    .copyright {
+        padding-left: 4ch;
+        font-size: 0.6rem;
+    }
+}

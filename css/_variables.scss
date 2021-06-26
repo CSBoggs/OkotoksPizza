@@ -1,22 +1,9 @@
-/* Gradients */
-@mixin navBarGrad() {
-    background: rgb(2,0,36);
-    background: linear-gradient(180deg, rgba(2,0,36,1) 0%, rgba(85,66,102,1) 32%, rgba(133,118,148,1) 100%);
-}
-@mixin aboutUsGrad() {
-    background: rgb(168,121,145);
-background: linear-gradient(180deg, rgba(168,121,145,1) 0%, rgba(254,204,156,1) 100%);
-}
-
 /* Colours */
 $cream: #EFE9DA;
+$darkcream: #FFDCBB;
 $darkpurple: #554266;
 $purple: #857694;
 $lilac: #A87991;
 $orange: #FECC9C;
 $darkorange: #F89883;
-
-/* Text Decorations */
-@mixin shadow() {
-    text-shadow: 2px 2px black;
-}
+$notblack: rgb(12, 12, 12);
