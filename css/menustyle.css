@@ -81,9 +81,9 @@ body {
   position: fixed;
   top: 8vh;
   right: 3.5vw;
-  background: #554266;
-  background: -webkit-gradient(linear, left top, left bottom, from(#554266), to(#857594));
-  background: linear-gradient(180deg, #554266 0%, #857594 100%);
+  background: #857594;
+  background: -webkit-gradient(linear, left top, left bottom, from(#857594), color-stop(75%, #a87991));
+  background: linear-gradient(180deg, #857594 0%, #a87991 75%);
   height: 150px;
   width: 200px;
   border: 2px solid #EFE9DA;

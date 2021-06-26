@@ -1,0 +1,16 @@
+@import 'variables';
+@import 'mixins';
+
+@include Defaults;
+
+/* Navigation Bar Styling*/
+@include Navbar;
+
+
+
+
+
+
+
+/* Footer */
+@include footerstlye;
