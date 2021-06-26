@@ -88,3 +88,14 @@
         user-select: none;
     }
 }
+
+/* Footer */
+@mixin footerstlye {
+    footer {
+        width: 100vw;
+        .copyright {
+            padding-left: 4ch;
+            font-size: 0.6rem;
+        }
+    }
+}

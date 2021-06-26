@@ -1,6 +1,9 @@
 /* Gradients */
 /* Colours */
 /* Text Decorations */
+/* Navigation Bar Styling*/
+/* Footer */
+/* Default Styling */
 * {
   padding: 0;
   margin: 0;
@@ -111,5 +114,16 @@ label {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+/* Subnavigation Tab Bar */
+/* Footer */
+footer {
+  width: 100vw;
+}
+
+footer .copyright {
+  padding-left: 4ch;
+  font-size: 0.6rem;
 }
 /*# sourceMappingURL=menustyle.css.map */

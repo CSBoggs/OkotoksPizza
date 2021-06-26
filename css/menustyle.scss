@@ -1,5 +1,5 @@
 @import 'variables';
-
+@import 'mixins';
 /* Default Styling */
 @include Defaults;
 
@@ -58,5 +58,6 @@
 
 
 
+
 /* Footer */
-@include footerstlye
+@include footerstlye;
