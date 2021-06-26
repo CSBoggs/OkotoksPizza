@@ -4,22 +4,11 @@
 /* HTML Default */
 /* Navigation Bar Styling*/
 /* Footer */
+/* Default Styling */
 * {
   padding: 0;
   margin: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-
-body {
-  display: -ms-grid;
-  display: grid;
-  max-width: 100vw;
-  background: #a87991;
-  background: -webkit-gradient(linear, left top, left bottom, from(#a87991), color-stop(75%, #fecc9c));
-  background: linear-gradient(180deg, #a87991 0%, #fecc9c 75%);
-  overflow-x: hidden;
 }
 
 a:link {
@@ -30,6 +19,10 @@ a:link {
 a:visited {
   color: #EFE9DA;
   text-decoration: none;
+}
+
+body {
+  background-color: #FF8474;
 }
 
 /* Navigation Bar Styling*/
@@ -123,6 +116,96 @@ label {
           user-select: none;
 }
 
+/* Container Styling */
+.container {
+  display: -ms-grid;
+  display: grid;
+  width: 100vw;
+  height: auto;
+  gap: 2vh;
+  -ms-grid-columns: auto;
+      grid-template-columns: auto;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  place-items: center;
+}
+
+.h1Text {
+  color: #EFE9DA;
+  text-shadow: 2px 2px #0c0c0c;
+  font-size: 2rem;
+  margin-top: 0.5ch;
+  text-align: center;
+}
+
+.gMaps {
+  width: 100vw;
+  height: 50vh;
+}
+
+.mapEmbed {
+  width: 100%;
+  height: 100%;
+}
+
+.contact {
+  background: #ff8474;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8474), color-stop(35%, #ffce9f));
+  background: linear-gradient(180deg, #ff8474 0%, #ffce9f 35%);
+  width: 100vw;
+}
+
+.contactInfo {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  padding: 1ch;
+  border-radius: 12pt;
+  -webkit-box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.75);
+          box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.75);
+  margin-left: 5vw;
+  margin-right: 5vw;
+  place-items: center;
+  background-color: #FFDCBB;
+}
+
+.h2Text {
+  color: #EFE9DA;
+  text-shadow: 2px 2px #0c0c0c;
+  font-size: 2rem;
+  padding-bottom: 0.5ch;
+}
+
+.infoText {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+}
+
+.infoText2 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -ms-grid-rows: 7;
+      grid-template-rows: 7;
+}
+
+.hours {
+  -ms-grid-column: 2;
+  grid-column: 2;
+}
+
+a {
+  text-shadow: 2px 2px #0c0c0c;
+}
+
 /* Footer */
 footer {
   display: -webkit-box;
@@ -139,5 +222,9 @@ footer {
 footer .copyright {
   padding-left: 4ch;
   font-size: 0.6rem;
+}
+
+footer {
+  background: #FECC9C;
 }
 /*# sourceMappingURL=contactustyle.css.map */

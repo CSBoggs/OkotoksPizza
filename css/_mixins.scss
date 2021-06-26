@@ -15,6 +15,12 @@ background: linear-gradient(180deg, rgba(168,121,145,1) 0%, rgba(254,204,156,1) 
     background: rgb(255,201,150);
     background: linear-gradient(180deg, rgba(255,201,150,1) 0%, rgba(248,152,131,1) 100%);
 }
+@mixin mapsGrad() {
+    background: rgb(255,132,116);
+    background: linear-gradient(180deg, rgba(255,132,116,1) 0%, rgba(255,206,159,1) 35%);
+}
+
+
 
 /* Text Decorations */
 @mixin shadow() {

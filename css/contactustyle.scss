@@ -1,11 +1,91 @@
 @import 'variables';
 @import 'mixins';
 
-@include Defaults;
+/* Default Styling */
+* {
+    padding: 0;
+    margin: 0; 
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+a:link {
+    color: $cream;
+    text-decoration: none;
+}
+a:visited {
+    color: $cream;
+    text-decoration: none;
+}
 
+body {
+    background-color: #FF8474;
+}
 /* Navigation Bar Styling*/
 @include Navbar;
 
+/* Container Styling */
+.container {
+    display: grid;
+    width: 100vw;
+    height: auto;
+    gap: 2vh;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    place-items: center;
+}
+    .h1Text {
+        color: $cream;
+        @include shadow;
+        font-size: 2rem;
+        margin-top: 0.5ch;
+        text-align: center;
+    }
+    .gMaps {
+        width: 100vw;
+        height: 50vh;
+    }
+        .mapEmbed {
+            width: 100%;
+            height: 100%
+        }
+    .contact {
+        @include mapsGrad;
+        width: 100vw;
+    }
+        .contactInfo {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            padding: 1ch;
+            border-radius: 12pt;
+            box-shadow: 2px 2px 3px rgba(50,50,50,0.75);
+            margin-left: 5vw;
+            margin-right: 5vw;
+            place-items: center;
+            background-color: $darkcream;
+        }
+            .h2Text {
+                color: $cream;
+                @include shadow;
+                font-size: 2rem;
+                padding-bottom: 0.5ch;
+            }
+                .infoText {
+                    display: grid;
+                    grid-template-columns: 1fr 2fr;
+                    grid-template-rows: auto;
+                }
+                .infoText2 {
+                    display: grid;
+                    grid-template-columns: 1fr 2fr;
+                    grid-template-rows: 7;
+                }
+                .hours {
+                    grid-column: 2;
+                }
+                    a {
+                        @include shadow;
+                    }
+                
 
 
 
@@ -14,3 +94,6 @@
 
 /* Footer */
 @include footerstlye;
+footer {
+    background: $orange;
+}

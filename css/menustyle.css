@@ -226,7 +226,6 @@ h2 {
   background: #ffc996;
   background: -webkit-gradient(linear, left top, left bottom, from(#ffc996), to(#f89883));
   background: linear-gradient(180deg, #ffc996 0%, #f89883 100%);
-  border: 1px solid rgba(50, 50, 50, 0.75);
   border-radius: 12pt;
   -webkit-box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.75);
           box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.75);
