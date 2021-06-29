@@ -39,7 +39,9 @@ header {
         @include navBarGrad;
         .logo {
             height: 10vh;
+            width: auto;
             cursor: pointer;
+            margin-left: 2.5vw;
         }
         .tele {
             font-size: 4vw;
@@ -55,6 +57,7 @@ header {
             width: 8vh;
             line-height: 5vh;
             cursor: pointer;
+            margin-right: 2.5vw;
         }
     }
 }
@@ -67,7 +70,7 @@ header {
         text-align: center;
         position: fixed;
         top: 8vh;
-        right: 3.5vw;
+        right: 2.5vw;
         @include menuGrad();
         height: 150px;
         width: 200px;
@@ -99,7 +102,7 @@ header {
     footer {
         display: flex;
         flex-direction: column-reverse;
-        height: 20px;
+        height: 3vh;
         .copyright {
             padding-left: 4ch;
             font-size: 0.6rem;

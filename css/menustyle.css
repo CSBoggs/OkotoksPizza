@@ -53,7 +53,9 @@ header .navbar {
 
 header .navbar .logo {
   height: 10vh;
+  width: auto;
   cursor: pointer;
+  margin-left: 2.5vw;
 }
 
 header .navbar .tele {
@@ -72,6 +74,7 @@ header .navbar .burgerIcon img {
   width: 8vh;
   line-height: 5vh;
   cursor: pointer;
+  margin-right: 2.5vw;
 }
 
 /* Hamburger Menu Toggle */
@@ -82,7 +85,7 @@ header .navbar .burgerIcon img {
   text-align: center;
   position: fixed;
   top: 8vh;
-  right: 3.5vw;
+  right: 2.5vw;
   background: #857594;
   background: -webkit-gradient(linear, left top, left bottom, from(#857594), color-stop(75%, #a87991));
   background: linear-gradient(180deg, #857594 0%, #a87991 75%);
