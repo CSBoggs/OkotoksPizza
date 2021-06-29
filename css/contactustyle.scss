@@ -91,14 +91,8 @@ body {
                         @include shadow;
                     }
                 
-
-
-
-
-
-
 /* Footer */
-@include footerstlye;
+@include footerstyle;
 footer {
     background: $orange;
 }
