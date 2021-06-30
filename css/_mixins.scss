@@ -31,33 +31,37 @@ header {
     grid-row: 1;
     grid-column: 1/3;
     .navbar {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-row: auto;
+        height: 10vh;
         z-index: 1;
         place-items: center;
         @include navBarGrad;
         .logo {
+            grid-column: 1;
+            grid-row: 1;
+            margin-right: 10vw;
             height: 10vh;
             width: auto;
             cursor: pointer;
-            margin-left: 2.5vw;
         }
         .tele {
+            grid-column: 2;
             font-size: 4vw;
             line-height: 5vh;
-            word-wrap: break-word;
             @include shadow;
-            a {
-                text-decoration: none;
-                white-space: initial;
-            }
         }        
         .burgerIcon img {
+            grid-column: 3;
             width: 8vh;
             line-height: 5vh;
+            margin-left: 10vw;
+            max-width: 15vw;
             cursor: pointer;
-            margin-right: 2.5vw;
+        }
+        .widescreen {
+            display: none;
         }
     }
 }
@@ -97,12 +101,46 @@ header {
     }
 }
 
+@media screen and (min-width: 600px) {
+    header {
+        .navbar { 
+            z-index: 1;
+            height: 15vh;
+            place-items: center;
+            .burgerIcon img {
+                display: none;
+            }
+            #telephone {
+                grid-column: 3;
+                grid-row: 1 ;
+                font-size: 1.2rem;
+                line-height: 3vh;
+                text-align: center;
+            }
+            #menuWide {
+                display: inline-block;
+                grid-row: 1;
+                grid-column: 2;
+                @include shadow;
+                .navLinksWide {
+                    display: grid;
+                    align-items: center;
+                    justify-items: center;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    list-style: none;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    text-transform: uppercase;
+                    padding-right: 2.5vw;
+                }   
+            }
+        }
+    }
+}
+
 /* Footer */
 @mixin footerstyle {
     footer {
-        display: flex;
-        flex-direction: column-reverse;
-        height: 3vh;
         .copyright {
             padding-left: 4ch;
             font-size: 0.6rem;

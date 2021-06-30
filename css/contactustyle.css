@@ -2,6 +2,49 @@
 /* Gradients */
 /* Text Decorations */
 /* Navigation Bar Styling*/
+@media screen and (min-width: 600px) {
+  header .navbar {
+    z-index: 1;
+    height: 15vh;
+    place-items: center;
+  }
+  header .navbar .burgerIcon img {
+    display: none;
+  }
+  header .navbar #telephone {
+    -ms-grid-column: 3;
+    grid-column: 3;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    font-size: 1.2rem;
+    line-height: 3vh;
+    text-align: center;
+  }
+  header .navbar #menuWide {
+    display: inline-block;
+    -ms-grid-row: 1;
+    grid-row: 1;
+    -ms-grid-column: 2;
+    grid-column: 2;
+    text-shadow: 2px 2px #0c0c0c;
+  }
+  header .navbar #menuWide .navLinksWide {
+    display: -ms-grid;
+    display: grid;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    justify-items: center;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    font-size: 1.5rem;
+    text-align: center;
+    text-transform: uppercase;
+    padding-right: 2.5vw;
+  }
+}
+
 /* Footer */
 /* Default Styling */
 * {
@@ -34,16 +77,12 @@ header {
 }
 
 header .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr 1fr;
+      grid-template-columns: 1fr 2fr 1fr;
+  grid-row: auto;
+  height: 10vh;
   z-index: 1;
   place-items: center;
   background: #554266;
@@ -52,29 +91,36 @@ header .navbar {
 }
 
 header .navbar .logo {
+  -ms-grid-column: 1;
+  grid-column: 1;
+  -ms-grid-row: 1;
+  grid-row: 1;
+  margin-right: 10vw;
   height: 10vh;
   width: auto;
   cursor: pointer;
-  margin-left: 2.5vw;
 }
 
 header .navbar .tele {
+  -ms-grid-column: 2;
+  grid-column: 2;
   font-size: 4vw;
   line-height: 5vh;
-  word-wrap: break-word;
   text-shadow: 2px 2px #0c0c0c;
 }
 
-header .navbar .tele a {
-  text-decoration: none;
-  white-space: initial;
-}
-
 header .navbar .burgerIcon img {
+  -ms-grid-column: 3;
+  grid-column: 3;
   width: 8vh;
   line-height: 5vh;
+  margin-left: 10vw;
+  max-width: 15vw;
   cursor: pointer;
-  margin-right: 2.5vw;
+}
+
+header .navbar .widescreen {
+  display: none;
 }
 
 /* Hamburger Menu Toggle */
@@ -215,17 +261,6 @@ a {
 }
 
 /* Footer */
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  height: 3vh;
-}
-
 footer .copyright {
   padding-left: 4ch;
   font-size: 0.6rem;
