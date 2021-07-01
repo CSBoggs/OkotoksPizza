@@ -297,9 +297,15 @@ h2 {
   -ms-grid-column-align: right;
       justify-self: right;
   text-align: right;
+  font-family: Georgia, 'Times New Roman', Times, serif;
   color: #0c0c0c;
   text-shadow: none;
   font-size: 0.8rem;
+}
+
+.menuGrid .menuItems span {
+  font-weight: bold;
+  font-style: italic;
 }
 
 /* Footer */
@@ -361,7 +367,7 @@ footer .copyright {
     overflow: hidden;
     width: 95vw;
     position: absolute;
-    top: 8.5vh;
+    top: 9vh;
     left: 0;
     background: #FFDCBB;
     color: #EFE9DA;

@@ -229,7 +229,7 @@ label {
           box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.75);
   margin-left: 5vw;
   margin-right: 5vw;
-  padding-bottom: 2vhch;
+  padding-bottom: 0.5ch;
   place-items: center;
   background-color: #FFDCBB;
 }
@@ -328,6 +328,7 @@ footer {
   }
   .container .location .h1Text {
     font-size: 3vw;
+    padding-right: 30vw;
   }
   .container .gMaps {
     width: 60vw;

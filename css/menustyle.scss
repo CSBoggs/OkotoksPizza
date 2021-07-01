@@ -124,9 +124,14 @@ h2 {
         p {
             justify-self: right;
             text-align: right;
+            font-family:Georgia, 'Times New Roman', Times, serif;
             color: $notblack;
             text-shadow: none;
             font-size: 0.8rem;
+        }
+        span {
+            font-weight: bold;
+            font-style: italic;
         }
     }
 }
@@ -184,7 +189,7 @@ footer {
         overflow: hidden;
         width: 95vw;
         position: absolute;
-        top: 8.5vh;
+        top: 9vh;
         left: 0;
         background: $darkcream;
         color: $cream;
