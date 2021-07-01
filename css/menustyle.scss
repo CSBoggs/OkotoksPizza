@@ -108,10 +108,6 @@ h2 {
     grid-template-rows: auto;
     gap: 1ch;
     margin-right: 0.5ch;
-    }
-    // .pizzaPic {
-    //     display: none;
-    // }
     .menuItems {
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -132,58 +128,9 @@ h2 {
             text-shadow: none;
             font-size: 0.8rem;
         }
-}
-
-@media screen and (min-width: 600px) {
-    .menuGrid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 1.5ch;
-        margin-right: 0.5ch;
-        min-height: 90vh;
-        }
-        .pizzaPic img {
-            display: block;
-            width: 46.5vw;
-            height: 15vh;
-            object-fit: cover;
-            border-radius: 12pt;
-            box-shadow: 2px 2px 3px rgba(50,50,50,0.75);
-        }
-        #pizzaPicWide img {
-            display: block;
-            width: 203%;
-            grid-column: 1 span 3;
-            grid-row: 8;
-            height: 15vh;
-            object-fit: cover;
-            border-radius: 12pt;
-            box-shadow: 2px 2px 3px rgba(50,50,50,0.75);
-        }
-        .menuItems {
-            display: grid;
-            grid-template-columns: 1fr 3fr;
-            grid-template-rows: auto;
-            @include menuItemGrad;
-            border-radius: 12pt;
-            box-shadow: 2px 2px 3px rgba(50,50,50,0.75);
-            place-items: center;
-            padding: 0.8ch;
-            gap: 2vw;
-            h2 {
-                font-size: 2.5vw;
-                justify-self: left
-            }
-            p {
-                font-size: 1.8vw;
-                justify-self: right;
-                text-align: right;
-                color: $notblack;
-                text-shadow: none;
-            }
     }
 }
+
 /* Footer */
 footer {
     grid-row: 9;
@@ -193,5 +140,55 @@ footer {
     .copyright {
         padding-left: 4ch;
         font-size: 0.6rem;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .menuGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1.5ch;
+        min-height: 90vh;
+        .menuItems {
+            gap: 2vw;
+            h2 {
+                font-size: 2.5vw;
+            }
+            p {
+                font-size: 1.8vw;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .menuGrid {
+        padding-top: 3vh;
+    }
+    .tabs .tab>label {
+        display: block;
+        padding: 1vh 2vw;
+        font-size: 52px;
+        border-radius: 16pt 22pt 0 0;
+        @include shadow;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+        color: $cream;
+        @include menuGrad;
+    }
+
+    .tabs .content {
+        display: none;
+        overflow: hidden;
+        width: 95vw;
+        position: absolute;
+        top: 8.5vh;
+        left: 0;
+        background: $darkcream;
+        color: $cream;
+        opacity: 0;
+        transition: opacity 250ms ease-out;
     }
 }
