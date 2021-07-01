@@ -16,7 +16,7 @@
     grid-column: 3;
     -ms-grid-row: 1;
     grid-row: 1;
-    font-size: 1.2rem;
+    font-size: 1.2vw;
     line-height: 3vh;
     text-align: center;
   }
@@ -35,13 +35,16 @@
         -ms-flex-align: center;
             align-items: center;
     justify-items: center;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 2fr 2fr;
+        grid-template-columns: 1fr 2fr 2fr;
     list-style: none;
-    font-size: 1.5rem;
+    font-size: 1.5vw;
     text-align: center;
     text-transform: uppercase;
     padding-right: 2.5vw;
+  }
+  header .navbar #menuWide .navLinksWide li {
+    padding: 1.5vw;
   }
 }
 
@@ -294,6 +297,7 @@ label {
   display: none;
 }
 
+/* Tablet Screen Sizes Below */
 @media screen and (min-width: 600px) {
   .aboutUs {
     display: -ms-grid;

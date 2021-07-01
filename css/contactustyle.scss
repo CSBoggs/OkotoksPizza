@@ -16,8 +16,12 @@ a:visited {
     text-decoration: none;
 }
 
+a {
+    @include shadow;
+}
+
 body {
-    background-color: #FF8474;
+    @include mapsGrad;
 }
 /* Navigation Bar Styling*/
 @include Navbar;
@@ -25,13 +29,10 @@ body {
 /* Container Styling */
 .container {
     display: grid;
-    width: 100vw;
-    height: auto;
     gap: 2vh;
     grid-template-columns: auto;
     grid-template-rows: auto;
     place-items: center;
-}
     .h1Text {
         color: $cream;
         @include shadow;
@@ -39,58 +40,81 @@ body {
         margin-top: 0.5ch;
         text-align: center;
     }
+}
 
 /* Google Maps styling */
-    .gMaps {
-        width: 100vw;
-        height: 50vh;
+.gMaps {
+    width: 100vw;
+    height: 85vh;
+    .mapEmbed {
+        width: 100%;
+        height: 100%
     }
-        .mapEmbed {
-            width: 100%;
-            height: 100%
-        }
+}
 
 /*Contact box styling */
-    .contact {
-        @include mapsGrad;
-        width: 100vw;
-    }
-        .contactInfo {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: auto;
-            padding: 1ch;
-            border-radius: 12pt;
-            box-shadow: 2px 2px 3px rgba(50,50,50,0.75);
-            margin-left: 5vw;
-            margin-right: 5vw;
-            padding-bottom: 0.5ch;
-            place-items: center;
-            background-color: $darkcream;
+.contact {
+    width: 100vw;
+    .contactInfo {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        padding: 1ch;
+        border-radius: 12pt;
+        box-shadow: 2px 2px 3px rgba(50,50,50,0.75);
+        margin-left: 5vw;
+        margin-right: 5vw;
+        padding-bottom: 0.5ch;
+        place-items: center;
+        background-color: $darkcream;
+        ul {
+            list-style: none;
         }
-            .h2Text {
-                color: $cream;
-                @include shadow;
-                font-size: 2rem;
-                padding-bottom: 0.5ch;
+        .h2Text {
+            color: $cream;
+            @include shadow;
+            font-size: 2rem;
+            padding-bottom: 0.5ch;
+            .infoText {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: auto;
+                width: 90%;                
             }
-                .infoText {
-                    display: grid;
-                    grid-template-columns: 1fr 2fr;
-                    grid-template-rows: auto;
-                }
-                .infoText2 {
-                    display: grid;
-                    grid-template-columns: 1fr 2fr;
-                    grid-template-rows: 7;
-                }
+            .infoText2 {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 7;
                 .hours {
                     grid-column: 2;
                 }
-                    a {
-                        @include shadow;
-                    }
-                
+
+            }      
+        }
+    }               
+}            
+
+@media screen and (min-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-template-rows: auto;
+        place-items: center;
+        .location {
+            grid-column: 1/3;
+            grid-row: 1;
+        }
+        .gMaps {
+            width: 60vw;
+        }
+    }
+    .contact {
+        width: 40vw;
+        grid-column: 2;
+        grid-row: 2;
+    }
+}
+
 /* Footer */
 @include footerstyle;
 footer {

@@ -109,6 +109,9 @@ h2 {
     gap: 1ch;
     margin-right: 0.5ch;
     }
+    // .pizzaPic {
+    //     display: none;
+    // }
     .menuItems {
         display: grid;
         grid-template-columns: 1fr 3fr;
@@ -131,8 +134,59 @@ h2 {
         }
 }
 
+@media screen and (min-width: 600px) {
+    .menuGrid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        gap: 1.5ch;
+        margin-right: 0.5ch;
+        min-height: 90vh;
+        }
+        .pizzaPic img {
+            display: block;
+            width: 46.5vw;
+            height: 15vh;
+            object-fit: cover;
+            border-radius: 12pt;
+            box-shadow: 2px 2px 3px rgba(50,50,50,0.75);
+        }
+        #pizzaPicWide img {
+            display: block;
+            width: 203%;
+            grid-column: 1 span 3;
+            grid-row: 8;
+            height: 15vh;
+            object-fit: cover;
+            border-radius: 12pt;
+            box-shadow: 2px 2px 3px rgba(50,50,50,0.75);
+        }
+        .menuItems {
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            grid-template-rows: auto;
+            @include menuItemGrad;
+            border-radius: 12pt;
+            box-shadow: 2px 2px 3px rgba(50,50,50,0.75);
+            place-items: center;
+            padding: 0.8ch;
+            gap: 2vw;
+            h2 {
+                font-size: 2.5vw;
+                justify-self: left
+            }
+            p {
+                font-size: 1.8vw;
+                justify-self: right;
+                text-align: right;
+                color: $notblack;
+                text-shadow: none;
+            }
+    }
+}
 /* Footer */
 footer {
+    grid-row: 9;
     width: 100%;
     height: 20px;
     color: $notblack;
