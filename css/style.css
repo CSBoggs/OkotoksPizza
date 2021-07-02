@@ -94,6 +94,10 @@ a:visited {
   text-decoration: none;
 }
 
+a:hover {
+  color: #F89883;
+}
+
 /* Navigation Bar Styling*/
 header {
   -ms-grid-row: 1;

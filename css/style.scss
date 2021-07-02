@@ -29,6 +29,10 @@ a:visited {
     font-weight: bold;
     text-decoration: none;
 }
+a:hover {
+    color: $darkorange;
+}  
+
 
 /* Navigation Bar Styling*/
 @include Navbar;
