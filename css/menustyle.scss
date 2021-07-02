@@ -24,7 +24,6 @@ body {
 @include Navbar;
 @include Button;
 @include Button2;
-@include Button3;
 
 /* Page Style */
 .tabContainer {
@@ -135,6 +134,8 @@ h2 {
         span {
             font-weight: bold;
             font-style: italic;
+            @include shadow;
+            color: $cream;
         }
     }
 }

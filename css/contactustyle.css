@@ -191,8 +191,8 @@ a.button {
   text-decoration: none;
   text-shadow: none;
   color: #554266;
-  -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
-          box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+  -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.9);
+          box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.9);
   background-color: #EFE9DA;
   text-align: center;
   -webkit-transition: ease-in 100ms;
