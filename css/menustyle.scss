@@ -22,6 +22,9 @@ body {
 
 /* Navigation Bar Styling*/
 @include Navbar;
+@include Button;
+@include Button2;
+@include Button3;
 
 /* Page Style */
 .tabContainer {
@@ -148,6 +151,7 @@ footer {
     }
 }
 
+/* Tablet Screen Sizes Below */
 @media screen and (min-width: 600px) {
     .menuGrid {
         display: grid;
@@ -167,6 +171,7 @@ footer {
     }
 }
 
+/* Desktop Screen Sizes Below */
 @media screen and (min-width: 1000px) {
     .menuGrid {
         padding-top: 3vh;

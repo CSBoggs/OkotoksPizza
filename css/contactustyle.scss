@@ -8,16 +8,14 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 a:link {
-    color: $cream;
+    color: $darkpurple;
+    font-weight: bold;
     text-decoration: none;
 }
 a:visited {
-    color: $cream;
+    color: $darkpurple;
+    font-weight: bold;
     text-decoration: none;
-}
-
-a {
-    @include shadow;
 }
 
 body {
@@ -25,6 +23,8 @@ body {
 }
 /* Navigation Bar Styling*/
 @include Navbar;
+@include Button;
+@include Button2;
 
 /* Container Styling */
 .container {
@@ -90,12 +90,16 @@ body {
                 .hours {
                     grid-column: 2;
                 }
-
             }      
         }
     }               
-}            
+}          
 
+p {
+    margin-left: 2vw;
+}
+
+/* Tablet Screen Sizes Below */
 @media screen and (min-width: 600px) {
     .container {
         display: grid;
@@ -124,6 +128,7 @@ footer {
     background: $orange;
 }
 
+/* Desktop Screen Sizes Below */
 @media screen and (min-width: 1000px) {
     .container {
         display: grid;

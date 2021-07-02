@@ -2,6 +2,7 @@
 /* Gradients */
 /* Text Decorations */
 /* Navigation Bar Styling*/
+/* Tablet Screen Sizes Below */
 @media screen and (min-width: 600px) {
   header .navbar {
     z-index: 1;
@@ -17,7 +18,7 @@
     -ms-grid-row: 1;
     grid-row: 1;
     font-size: 1.2vw;
-    line-height: 3vh;
+    line-height: 4vh;
     text-align: center;
   }
   header .navbar #menuWide {
@@ -26,7 +27,6 @@
     grid-row: 1;
     -ms-grid-column: 2;
     grid-column: 2;
-    text-shadow: 2px 2px #0c0c0c;
   }
   header .navbar #menuWide .navLinksWide {
     display: -ms-grid;
@@ -49,6 +49,15 @@
 }
 
 /* Footer */
+/* Desktop Screen Sizes Below */
+@media screen and (min-width: 1000px) {
+  header .navbar .logo {
+    -webkit-transform: translate(-50%, 40%) scale(192%, 192%);
+            transform: translate(-50%, 40%) scale(192%, 192%);
+  }
+}
+
+/* Button Styling */
 html {
   scroll-behavior: smooth;
 }
@@ -120,9 +129,8 @@ header .navbar .logo {
 header .navbar .tele {
   -ms-grid-column: 2;
   grid-column: 2;
-  font-size: 4vw;
-  line-height: 5vh;
-  text-shadow: 2px 2px #0c0c0c;
+  font-size: 3vw;
+  line-height: 3vh;
 }
 
 header .navbar .burgerIcon img {
@@ -163,7 +171,7 @@ header .navbar .widescreen {
   list-style: none;
   font-size: 28px;
   text-transform: uppercase;
-  text-shadow: 2px 2px #0c0c0c;
+  text-shadow: 2px 2px 2px #0c0c0c;
   height: 150px;
   line-height: 50px;
 }
@@ -181,6 +189,58 @@ label {
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+
+a.button {
+  display: inline-block;
+  padding: 0.2vh 1vw 0.3vh;
+  border: 3px solid #EFE9DA;
+  border-radius: 2pt;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: none;
+  color: #554266;
+  -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+          box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+  background-color: #EFE9DA;
+  text-align: center;
+  -webkit-transition: ease-in 100ms;
+  transition: ease-in 100ms;
+}
+
+a.button:hover {
+  color: #F89883;
+  border-color: #F89883;
+  background: #554266;
+  background: -webkit-gradient(linear, left top, left bottom, from(#554266), to(#857594));
+  background: linear-gradient(180deg, #554266 0%, #857594 100%);
+  text-shadow: 2px 2px 2px #0c0c0c;
+}
+
+a.button2 {
+  display: inline-block;
+  padding: 0.2vh 1vw 0.2vh;
+  border: 3px solid #90e090;
+  border-radius: 2pt;
+  font-weight: bold;
+  text-decoration: none;
+  text-shadow: none;
+  color: #554266;
+  -webkit-box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+          box-shadow: 4px 4px 5px rgba(50, 50, 50, 0.75);
+  background-color: #90e090;
+  text-align: center;
+  -webkit-transition: ease-in 250ms;
+  transition: ease-in 250ms;
+}
+
+a.button2:hover {
+  color: #F89883;
+  border-color: #F89883;
+  background: #554266;
+  background: -webkit-gradient(linear, left top, left bottom, from(#554266), to(#857594));
+  background: linear-gradient(180deg, #554266 0%, #857594 100%);
+  text-shadow: 2px 2px 2px #0c0c0c;
 }
 
 /* Hero Image and Text */
@@ -201,7 +261,7 @@ label {
 .hero .heroText {
   color: #EFE9DA;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  text-shadow: 2px 2px #0c0c0c;
+  text-shadow: 2px 2px 2px #0c0c0c;
   font-size: 5vw;
   text-align: center;
   -webkit-transform: translate(0%, -200%);
@@ -233,7 +293,7 @@ label {
 }
 
 .socials .sLinkImage {
-  width: 10vw;
+  width: 8vw;
 }
 
 /* Video + About Us*/
@@ -262,7 +322,7 @@ label {
   text-decoration: underline;
   -webkit-transform: translate(0%, -70%);
           transform: translate(0%, -70%);
-  text-shadow: 2px 2px #0c0c0c;
+  text-shadow: 2px 2px 2px #0c0c0c;
 }
 
 .aboutUs .aboutUsText {
@@ -338,7 +398,7 @@ label {
     text-decoration: underline;
     -webkit-transform: translate(0%, -70%);
             transform: translate(0%, -70%);
-    text-shadow: 2px 2px #0c0c0c;
+    text-shadow: 2px 2px 2px #0c0c0c;
   }
   .aboutUs .container2 {
     -ms-grid-column: 1;
@@ -456,6 +516,7 @@ footer {
   line-height: 2vh;
 }
 
+/* Desktop Screen Sizes Below */
 @media screen and (min-width: 1000px) {
   .aboutUs {
     display: -ms-grid;
@@ -465,6 +526,8 @@ footer {
     -ms-grid-rows: auto;
         grid-template-rows: auto;
     place-items: center;
+    margin-left: 9vw;
+    margin-right: 9vw;
   }
   .aboutUs .vidContainer {
     -ms-grid-column: 1;
@@ -479,8 +542,8 @@ footer {
             filter: drop-shadow(4px 4px 5px rgba(50, 50, 50, 0.95));
   }
   .aboutUs .vidContainer iframe {
-    height: 70vh;
-    width: 90vw;
+    height: 82vh;
+    width: 82vw;
   }
   .aboutUs .container1 {
     -ms-grid-column: 1;
@@ -497,7 +560,10 @@ footer {
     text-decoration: underline;
     -webkit-transform: translate(0%, -70%);
             transform: translate(0%, -70%);
-    text-shadow: 2px 2px #0c0c0c;
+    text-shadow: 2px 2px 2px #0c0c0c;
+  }
+  .aboutUs .container1 .p {
+    text-align: left;
   }
   .aboutUs .container2 {
     -ms-grid-column: 1;
@@ -509,11 +575,15 @@ footer {
     width: 95%;
   }
   .aboutUs .container3 {
-    -ms-grid-column: 1;
-    grid-column: 1;
+    -ms-grid-column: 2;
+    grid-column: 2;
     -ms-grid-row: 4;
     grid-row: 4;
+    padding-left: 2vw;
     width: 90%;
+  }
+  .aboutUs .container3 p {
+    text-align: right;
   }
   .aboutUs .container4 {
     -ms-grid-column: 1;
@@ -521,6 +591,7 @@ footer {
     grid-column: 1/3;
     -ms-grid-row: 5;
     grid-row: 5;
+    padding-top: 2vh;
   }
   .aboutUs .aboutUsText {
     color: #252525;
@@ -531,8 +602,8 @@ footer {
   .aboutUs .clipShadow {
     -ms-grid-row: 4;
     grid-row: 4;
-    -ms-grid-column: 2;
-    grid-column: 2;
+    -ms-grid-column: 1;
+    grid-column: 1;
     margin-top: 7vh;
     margin-bottom: 2.5vh;
     -webkit-filter: drop-shadow(4px 4px 5px rgba(50, 50, 50, 0.95));
@@ -554,7 +625,7 @@ footer {
     grid-row: 7;
     display: block;
     padding-top: 5vh;
-    width: 90%;
+    width: 120%;
   }
   .aboutUs .clipShadow3 #atmosphere {
     -webkit-clip-path: polygon(50% 0%, 100% 28%, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 28%);
@@ -562,5 +633,10 @@ footer {
     width: 100%;
     display: block;
   }
+}
+
+.button3:hover {
+  background: #85769475;
+  border-radius: 16pt;
 }
 /*# sourceMappingURL=style.css.map */

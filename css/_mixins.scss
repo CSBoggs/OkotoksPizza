@@ -22,7 +22,7 @@ background: linear-gradient(180deg, rgba(168,121,145,1) 0%, rgba(254,204,156,1) 
 
 /* Text Decorations */
 @mixin shadow() {
-    text-shadow: 2px 2px $notblack;
+    text-shadow: 2px 2px 2px $notblack;
 }
 
 /* Navigation Bar Styling*/
@@ -48,9 +48,8 @@ header {
         }
         .tele {
             grid-column: 2;
-            font-size: 4vw;
-            line-height: 5vh;
-            @include shadow;
+            font-size: 3vw;
+            line-height: 3vh;
         }        
         .burgerIcon img {
             grid-column: 3;
@@ -101,6 +100,7 @@ header {
     }
 }
 
+/* Tablet Screen Sizes Below */
 @media screen and (min-width: 600px) {
     header {
         .navbar { 
@@ -114,14 +114,13 @@ header {
                 grid-column: 3;
                 grid-row: 1 ;
                 font-size: 1.2vw;
-                line-height: 3vh;
+                line-height: 4vh;
                 text-align: center;
             }
             #menuWide {
                 display: inline-block;
                 grid-row: 1;
                 grid-column: 2;
-                @include shadow;
                 .navLinksWide {
                     display: grid;
                     align-items: center;
@@ -148,5 +147,70 @@ header {
             padding-left: 4ch;
             font-size: 0.6rem;
         }
+    }
+}
+
+/* Desktop Screen Sizes Below */
+@media screen and (min-width: 1000px) {
+    header {
+        .navbar { 
+            .logo {
+                transform: translate(-50%, 40%) scale(192%,192%);
+            }
+        }
+    }
+}
+
+/* Button Styling */
+@mixin Button {
+    a.button {
+        display: inline-block;
+        padding: 0.2vh 1vw 0.3vh;
+        border: 3px solid $cream;
+        border-radius: 2pt;
+        font-weight: bold;
+        text-decoration: none;
+        text-shadow: none;
+        color: $darkpurple;
+        box-shadow: 4px 4px 5px rgba(50,50,50,0.75);
+        background-color: $cream;
+        text-align: center;
+        transition: ease-in 100ms;
+    }
+    a.button:hover {
+        color: $darkorange;
+        border-color: $darkorange;
+        @include navBarGrad();
+        @include shadow();
+    }
+}
+
+@mixin Button2 {
+    a.button2 {
+        display: inline-block;
+        padding: 0.2vh 1vw 0.2vh;
+        border: 3px solid rgb(144, 224, 144);
+        border-radius: 2pt;
+        font-weight: bold;
+        text-decoration: none;
+        text-shadow: none;
+        color: $darkpurple;
+        box-shadow: 4px 4px 5px rgba(50,50,50,0.75);
+        background-color: rgb(144, 224, 144);
+        text-align: center;
+        transition: ease-in 250ms;
+    }
+    a.button2:hover {
+        color: $darkorange;
+        border-color: $darkorange;
+        @include navBarGrad();
+        @include shadow();
+    }
+}
+
+@mixin button3 {
+    .button3:hover {
+        background: #85769475;
+        border-radius: 16pt;
     }
 }
