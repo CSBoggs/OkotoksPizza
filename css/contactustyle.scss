@@ -8,12 +8,12 @@
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 a:link {
-    color: $darkpurple;
+    color: $cream;
     font-weight: bold;
     text-decoration: none;
 }
 a:visited {
-    color: $darkpurple;
+    color: $cream;
     font-weight: bold;
     text-decoration: none;
 }
@@ -81,7 +81,7 @@ body {
                 display: grid;
                 grid-template-columns: 1fr 2fr;
                 grid-template-rows: auto;
-                width: 90%;                
+                width: 90%;          
             }
             .infoText2 {
                 display: grid;
@@ -94,6 +94,19 @@ body {
         }
     }               
 }          
+
+a.infoLink:link {
+    color: $darkpurple;
+    font-weight: bold;
+}
+a.infoLink:visited {
+    color: $darkpurple;
+    font-weight: bold;
+}    
+a.infoLink:hover {
+    color: $lilac;
+}  
+
 
 p {
     margin-left: 2vw;
@@ -126,6 +139,7 @@ p {
 @include footerstyle;
 footer {
     background: $orange;
+    padding-top: 2vh;
 }
 
 /* Desktop Screen Sizes Below */

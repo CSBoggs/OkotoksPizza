@@ -84,11 +84,13 @@ body {
 
 a:link {
   color: #EFE9DA;
+  font-weight: bold;
   text-decoration: none;
 }
 
 a:visited {
   color: #EFE9DA;
+  font-weight: bold;
   text-decoration: none;
 }
 

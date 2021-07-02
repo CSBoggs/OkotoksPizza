@@ -66,13 +66,13 @@
 }
 
 a:link {
-  color: #554266;
+  color: #EFE9DA;
   font-weight: bold;
   text-decoration: none;
 }
 
 a:visited {
-  color: #554266;
+  color: #EFE9DA;
   font-weight: bold;
   text-decoration: none;
 }
@@ -327,6 +327,20 @@ a.button2:hover {
   grid-column: 2;
 }
 
+a.infoLink:link {
+  color: #554266;
+  font-weight: bold;
+}
+
+a.infoLink:visited {
+  color: #554266;
+  font-weight: bold;
+}
+
+a.infoLink:hover {
+  color: #A87991;
+}
+
 p {
   margin-left: 2vw;
 }
@@ -370,6 +384,7 @@ footer .copyright {
 
 footer {
   background: #FECC9C;
+  padding-top: 2vh;
 }
 
 /* Desktop Screen Sizes Below */
