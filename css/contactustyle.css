@@ -62,7 +62,6 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 a:link {
@@ -256,9 +255,12 @@ a.button2:hover {
 }
 
 .container .h1Text {
+  font-family: brush-script-std, sans-serif;
+  font-weight: 450;
+  font-style: normal;
   color: #EFE9DA;
   text-shadow: 2px 2px 2px #0c0c0c;
-  font-size: 2rem;
+  font-size: 3rem;
   margin-top: 0.5ch;
   text-align: center;
 }
@@ -307,8 +309,11 @@ a.button2:hover {
 
 .contact .contactInfo .h2Text {
   color: #EFE9DA;
+  font-family: brush-script-std, sans-serif;
+  font-weight: 400;
+  font-style: normal;
   text-shadow: 2px 2px 2px #0c0c0c;
-  font-size: 2rem;
+  font-size: 3rem;
   padding-bottom: 0.5ch;
 }
 
@@ -415,7 +420,7 @@ footer {
     grid-row: 1;
   }
   .container .location .h1Text {
-    font-size: 3vw;
+    font-size: 4vw;
     padding-right: 30vw;
   }
   .container .gMaps {

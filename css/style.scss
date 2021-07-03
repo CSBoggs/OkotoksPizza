@@ -10,7 +10,6 @@ html {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 body {
@@ -52,7 +51,6 @@ a:hover {
     }
     .heroText {
         color: $cream;
-        font-family:Georgia, 'Times New Roman', Times, serif;
         @include shadow;
         font-size: 5vw;
         text-align: center;
@@ -61,9 +59,10 @@ a:hover {
         margin-right: 5vw;
         span {
             font-size: 8vw;
-            font-style: italic;
+            font-family: brush-script-std, sans-serif;
+            font-weight: 400;
+            font-style: normal;
             color: #a68ec5;
-            text-decoration: underline;
         }
     }
 }
@@ -301,7 +300,7 @@ footer {
         }
         .aboutUsText {
             color: rgb(37, 37, 37);
-            font-size: 2vw;
+            font-size: 2.2vw;
             text-indent: 2em;
             margin-bottom: 2.5vh;
         }

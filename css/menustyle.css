@@ -62,7 +62,6 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 a:link {
@@ -368,15 +367,16 @@ h2 {
   -ms-grid-column-align: right;
       justify-self: right;
   text-align: right;
-  font-family: Georgia, 'Times New Roman', Times, serif;
   color: #0c0c0c;
   text-shadow: none;
   font-size: 0.8rem;
 }
 
 .menuGrid .menuItems span {
-  font-weight: bold;
-  font-style: italic;
+  font-family: brush-script-std, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding-right: 0.5vw;
   text-shadow: 2px 2px 2px #0c0c0c;
   color: #EFE9DA;
 }

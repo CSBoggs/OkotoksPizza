@@ -5,7 +5,6 @@
 * {
     padding: 0;
     margin: 0; 
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 a:link {
     color: $cream;
@@ -126,19 +125,20 @@ h2 {
         padding: 0.8ch;
         gap: 4ch;
         h2 {
-            justify-self: left
+            justify-self: left;
         }
         p {
             justify-self: right;
             text-align: right;
-            font-family:Georgia, 'Times New Roman', Times, serif;
             color: $notblack;
             text-shadow: none;
             font-size: 0.8rem;
         }
         span {
-            font-weight: bold;
-            font-style: italic;
+            font-family: brush-script-std, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            padding-right: 0.5vw;
             @include shadow;
             color: $cream;
         }
