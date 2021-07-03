@@ -550,8 +550,8 @@ footer {
     -ms-grid-row: 3;
     grid-row: 3;
     display: block;
-    padding-top: 5vh;
-    padding-bottom: 4vh;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
     -webkit-filter: drop-shadow(4px 4px 5px rgba(50, 50, 50, 0.95));
             filter: drop-shadow(4px 4px 5px rgba(50, 50, 50, 0.95));
   }
