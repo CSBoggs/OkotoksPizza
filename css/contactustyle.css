@@ -260,7 +260,7 @@ a.button2:hover {
   font-style: normal;
   color: #EFE9DA;
   text-shadow: 2px 2px 2px #0c0c0c;
-  font-size: 3rem;
+  font-size: 2vw;
   margin-top: 0.5ch;
   text-align: center;
 }
@@ -292,19 +292,20 @@ a.button2:hover {
       grid-template-columns: 1fr;
   -ms-grid-rows: auto;
       grid-template-rows: auto;
-  padding: 1ch;
+  padding: 1vw;
   border-radius: 12pt;
   -webkit-box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.75);
           box-shadow: 2px 2px 3px rgba(50, 50, 50, 0.75);
   margin-left: 5vw;
   margin-right: 5vw;
-  padding-bottom: 0.5ch;
+  padding-bottom: 0.5vh;
   place-items: center;
   background-color: #FFDCBB;
 }
 
 .contact .contactInfo ul {
   list-style: none;
+  font-size: 1.5vw;
 }
 
 .contact .contactInfo .h2Text {
@@ -313,8 +314,8 @@ a.button2:hover {
   font-weight: 400;
   font-style: normal;
   text-shadow: 2px 2px 2px #0c0c0c;
-  font-size: 3rem;
-  padding-bottom: 0.5ch;
+  font-size: 3vw;
+  padding-bottom: 0.5vh;
 }
 
 .contact .contactInfo .h2Text .infoText {
