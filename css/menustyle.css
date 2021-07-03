@@ -262,7 +262,7 @@ nav .subnavbar {
 h2 {
   text-shadow: 2px 2px 2px #0c0c0c;
   text-transform: uppercase;
-  color: #FFDCBB;
+  color: #EFE9DA;
 }
 
 .tabs {
@@ -293,7 +293,7 @@ h2 {
   text-transform: uppercase;
   cursor: pointer;
   position: relative;
-  color: #FFDCBB;
+  color: #EFE9DA;
   background: #857594;
   background: -webkit-gradient(linear, left top, left bottom, from(#857594), color-stop(75%, #a87991));
   background: linear-gradient(180deg, #857594 0%, #a87991 75%);
