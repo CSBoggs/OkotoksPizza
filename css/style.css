@@ -329,19 +329,23 @@ a.button2:hover {
 
 .aboutUs .container1 h2 {
   font-size: 6vw;
+  font-weight: bold;
   text-transform: uppercase;
   color: #EFE9DA;
-  text-decoration: underline;
   -webkit-transform: translate(0%, -70%);
           transform: translate(0%, -70%);
   text-shadow: 2px 2px 2px #0c0c0c;
+}
+
+.aboutUs .container4 {
+  padding-bottom: 4vh;
 }
 
 .aboutUs .aboutUsText {
   color: #252525;
   font-size: 4vw;
   text-indent: 2em;
-  margin-bottom: 2vh;
+  padding-bottom: 2vh;
 }
 
 .aboutUs .clipShadow {
@@ -406,9 +410,9 @@ a.button2:hover {
   }
   .aboutUs .container1 h2 {
     font-size: 8vw;
+    font-weight: bold;
     text-transform: uppercase;
     color: #EFE9DA;
-    text-decoration: underline;
     -webkit-transform: translate(0%, -70%);
             transform: translate(0%, -70%);
     text-shadow: 2px 2px 2px #0c0c0c;
@@ -571,9 +575,9 @@ footer {
   }
   .aboutUs .container1 h2 {
     font-size: 3.5vw;
+    font-weight: bold;
     text-transform: uppercase;
     color: #EFE9DA;
-    text-decoration: underline;
     -webkit-transform: translate(-15%, -90%);
             transform: translate(-15%, -90%);
     text-shadow: 2px 2px 2px #0c0c0c;

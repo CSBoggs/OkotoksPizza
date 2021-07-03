@@ -94,18 +94,21 @@ a:hover {
     .container1 {
         h2 {
             font-size: 6vw;
+            font-weight: bold;
             text-transform: uppercase;
             color: $cream;
-            text-decoration: underline;
             transform: translate(0%,-70%);
             @include shadow;
         }
+    }
+    .container4 {
+        padding-bottom: 4vh;
     }
     .aboutUsText {
         color: rgb(37, 37, 37);
         font-size: 4vw;
         text-indent: 2em;
-        margin-bottom: 2vh;
+        padding-bottom: 2vh;
     } 
     .clipShadow {
         grid-row: 3;
@@ -150,9 +153,9 @@ a:hover {
             grid-row: 1;
             h2 {
                 font-size: 8vw;
+                font-weight: bold;
                 text-transform: uppercase;
                 color: $cream;
-                text-decoration: underline;
                 transform: translate(0%,-70%);
                 @include shadow;
             }
@@ -268,9 +271,9 @@ footer {
             padding-left: 2.5vw;
             h2 {
                 font-size: 3.5vw;
+                font-weight: bold;
                 text-transform: uppercase;
                 color: $cream;
-                text-decoration: underline;
                 transform: translate(-15%,-90%);
                 @include shadow;
             }
