@@ -262,7 +262,7 @@ nav .subnavbar {
 h2 {
   text-shadow: 2px 2px 2px #0c0c0c;
   text-transform: uppercase;
-  color: #EFE9DA;
+  color: #FFDCBB;
 }
 
 .tabs {
@@ -287,12 +287,13 @@ h2 {
   display: block;
   padding: 8px 14px;
   font-size: 22px;
+  font-weight: bold;
   border-radius: 6pt 6pt 0 0;
   text-shadow: 2px 2px 2px #0c0c0c;
   text-transform: uppercase;
   cursor: pointer;
   position: relative;
-  color: #EFE9DA;
+  color: #FFDCBB;
   background: #857594;
   background: -webkit-gradient(linear, left top, left bottom, from(#857594), color-stop(75%, #a87991));
   background: linear-gradient(180deg, #857594 0%, #a87991 75%);
@@ -315,7 +316,9 @@ h2 {
 .tabs > .tab > [id^="tab"]:checked + label {
   top: 0px;
   color: #0c0c0c;
+  font-weight: bold;
   text-shadow: none;
+  text-decoration: underline;
   background: #efe9da;
   background: -webkit-gradient(linear, left top, left bottom, from(#efe9da), to(#ffdcbb));
   background: linear-gradient(180deg, #efe9da 0%, #ffdcbb 100%);
@@ -361,6 +364,10 @@ h2 {
 .menuGrid .menuItems h2 {
   -ms-grid-column-align: left;
       justify-self: left;
+  font-weight: lighter;
+  font-style: italic;
+  padding-left: 0.5vw;
+  color: #EFE9DA;
 }
 
 .menuGrid .menuItems p {
@@ -370,11 +377,12 @@ h2 {
   color: #0c0c0c;
   text-shadow: none;
   font-size: 0.8rem;
+  padding-right: 0.5vw;
 }
 
 .menuGrid .menuItems span {
   font-family: brush-script-std, sans-serif;
-  font-weight: 400;
+  font-weight: lighter;
   font-style: normal;
   padding-right: 0.5vw;
   text-shadow: 2px 2px 2px #0c0c0c;

@@ -47,7 +47,7 @@ nav .subnavbar {
 h2 {
     @include shadow;
     text-transform: uppercase;
-    color: $cream;
+    color: $darkcream;
 }
 .tabs {
     width: 95vw;
@@ -71,12 +71,13 @@ h2 {
     display: block;
     padding: 8px 14px;
     font-size: 22px;
+    font-weight: bold;
     border-radius: 6pt 6pt 0 0;
     @include shadow;
     text-transform: uppercase;
     cursor: pointer;
     position: relative;
-    color: $cream;
+    color: $darkcream;
     @include menuGrad;
 }
 
@@ -96,7 +97,9 @@ h2 {
 .tabs>.tab>[id^="tab"]:checked + label {
     top: 0px;
     color: $notblack;
+    font-weight: bold;
     text-shadow: none;
+    text-decoration: underline;
     background: rgb(239,233,218);
     background: linear-gradient(180deg, rgba(239,233,218,1) 0%, rgba(255,220,187,1) 100%);
 }
@@ -126,6 +129,10 @@ h2 {
         gap: 4ch;
         h2 {
             justify-self: left;
+            font-weight: lighter;
+            font-style: italic;
+            padding-left: 0.5vw;
+            color: $cream;
         }
         p {
             justify-self: right;
@@ -133,10 +140,11 @@ h2 {
             color: $notblack;
             text-shadow: none;
             font-size: 0.8rem;
+            padding-right: 0.5vw;
         }
         span {
             font-family: brush-script-std, sans-serif;
-            font-weight: 400;
+            font-weight: lighter;
             font-style: normal;
             padding-right: 0.5vw;
             @include shadow;
