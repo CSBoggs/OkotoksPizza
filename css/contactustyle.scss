@@ -1,7 +1,7 @@
 @import 'variables';
 @import 'mixins';
 
-/* Default Styling */
+/* Body and Root Styling */
 * {
     padding: 0;
     margin: 0; 
@@ -24,6 +24,7 @@ a:hover {
 body {
     @include mapsGrad;
 }
+
 /* Navigation Bar Styling*/
 @include Navbar;
 @include Button;

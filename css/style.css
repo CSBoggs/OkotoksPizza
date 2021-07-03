@@ -62,6 +62,7 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Body and Root Styles */
 * {
   padding: 0;
   margin: 0;
@@ -82,6 +83,7 @@ body {
       grid-template-rows: auto;
 }
 
+/* Page Link Styling */
 a:link {
   color: #EFE9DA;
   font-weight: bold;
@@ -299,8 +301,8 @@ a.button2:hover {
   margin-right: 2.5vw;
   -webkit-filter: drop-shadow(4px 4px 5px rgba(50, 50, 50, 0.35));
           filter: drop-shadow(4px 4px 5px rgba(50, 50, 50, 0.35));
-  -webkit-transform: translate(0%, -40%);
-          transform: translate(0%, -40%);
+  -webkit-transform: translate(0%, -70%);
+          transform: translate(0%, -70%);
 }
 
 .socials .sLinkImage {
@@ -619,7 +621,7 @@ footer {
     grid-row: 4;
     -ms-grid-column: 1;
     grid-column: 1;
-    margin-top: 7vh;
+    margin-top: 2.5vh;
     margin-bottom: 2.5vh;
     -webkit-filter: drop-shadow(4px 4px 5px rgba(50, 50, 50, 0.95));
             filter: drop-shadow(4px 4px 5px rgba(50, 50, 50, 0.95));
@@ -627,8 +629,8 @@ footer {
   .aboutUs .clipShadow #interior {
     width: 100%;
     height: auto;
-    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-            clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+    -webkit-clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+            clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
   }
   .aboutUs .clipShadow3 {
     -webkit-filter: drop-shadow(4px 4px 5px rgba(50, 50, 50, 0.95));

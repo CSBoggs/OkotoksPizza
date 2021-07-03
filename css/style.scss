@@ -5,6 +5,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Body and Root Styles */
 * {
     padding: 0;
     margin: 0;
@@ -19,6 +20,7 @@ body {
     grid-template-rows: auto;
 }
 
+/* Page Link Styling */
 a:link {
     color: $cream;
     font-weight: bold;
@@ -73,7 +75,7 @@ a:hover {
     justify-self: right;
     margin-right: 2.5vw;
     filter: drop-shadow(4px 4px 5px rgba(50,50,50,0.35));
-    transform: translate(0%,-40%);
+    transform: translate(0%,-70%);
     .sLinkImage {
         width: 8vw;
     }
@@ -306,13 +308,13 @@ footer {
         .clipShadow {
             grid-row: 4;
             grid-column: 1;
-            margin-top: 7vh;
+            margin-top: 2.5vh;
             margin-bottom: 2.5vh;
             filter: drop-shadow(4px 4px 5px rgba(50,50,50,0.95));
             #interior {
                 width: 100%;
                 height: auto;
-                clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
+                clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
             }
         }
         .clipShadow3 {
@@ -338,7 +340,6 @@ footer {
         }
     }
 }
-
 
 .button3:hover {
     background: #85769475;
