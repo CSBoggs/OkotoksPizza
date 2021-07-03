@@ -59,6 +59,9 @@ header {
             max-width: 15vw;
             cursor: pointer;
         }
+        .burgerIcon:hover {
+            transform: scale(100%,150%);
+        }
         .widescreen {
             display: none;
         }

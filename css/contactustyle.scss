@@ -17,6 +17,9 @@ a:visited {
     font-weight: bold;
     text-decoration: none;
 }
+a:hover {
+    color: $darkorange;
+}  
 
 body {
     @include mapsGrad;

@@ -77,6 +77,10 @@ a:visited {
   text-decoration: none;
 }
 
+a:hover {
+  color: #F89883;
+}
+
 body {
   background: #ff8474;
   background: -webkit-gradient(linear, left top, left bottom, from(#ff8474), color-stop(35%, #ffce9f));
@@ -132,6 +136,11 @@ header .navbar .burgerIcon img {
   margin-left: 10vw;
   max-width: 15vw;
   cursor: pointer;
+}
+
+header .navbar .burgerIcon:hover {
+  -webkit-transform: scale(100%, 150%);
+          transform: scale(100%, 150%);
 }
 
 header .navbar .widescreen {
