@@ -260,7 +260,7 @@ a.button2:hover {
   font-style: normal;
   color: #EFE9DA;
   text-shadow: 2px 2px 2px #0c0c0c;
-  font-size: 2vw;
+  font-size: 8vw;
   margin-top: 0.5ch;
   text-align: center;
 }
@@ -305,7 +305,7 @@ a.button2:hover {
 
 .contact .contactInfo ul {
   list-style: none;
-  font-size: 1.5vw;
+  font-size: 4vw;
 }
 
 .contact .contactInfo .h2Text {
@@ -314,7 +314,7 @@ a.button2:hover {
   font-weight: 400;
   font-style: normal;
   text-shadow: 2px 2px 2px #0c0c0c;
-  font-size: 3vw;
+  font-size: 8vw;
   padding-bottom: 0.5vh;
 }
 
@@ -383,18 +383,27 @@ p {
     padding-left: 5vw;
   }
   .contact {
-    width: 30vw;
+    width: 45vw;
     -ms-grid-column: 2;
     grid-column: 2;
     -ms-grid-row: 2;
     grid-row: 2;
   }
+  .contact .contactInfo .h2Text {
+    font-size: 4vw;
+  }
+  .contact .contactInfo .infoText {
+    font-size: 3vw;
+  }
+  .contact .contactInfo .infoText2 {
+    font-size: 3vw;
+  }
 }
 
 /* Footer */
 footer .copyright {
-  padding-left: 4ch;
-  font-size: 0.6rem;
+  padding-left: 4vw;
+  font-size: 1.5vh;
 }
 
 footer {
@@ -440,6 +449,15 @@ footer {
   .contact .contactInfo {
     -webkit-box-shadow: 8px 8px 8px rgba(50, 50, 50, 0.75);
             box-shadow: 8px 8px 8px rgba(50, 50, 50, 0.75);
+  }
+  .contact .contactInfo .h2Text {
+    font-size: 2.4vw;
+  }
+  .contact .contactInfo .infoText {
+    font-size: 1.5vw;
+  }
+  .contact .contactInfo .infoText2 {
+    font-size: 1.5vw;
   }
 }
 /*# sourceMappingURL=contactustyle.css.map */

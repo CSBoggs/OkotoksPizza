@@ -521,8 +521,8 @@ a.button2:hover {
 
 /* Footer */
 footer .copyright {
-  padding-left: 4ch;
-  font-size: 0.6rem;
+  padding-left: 4vw;
+  font-size: 1.5vh;
 }
 
 footer {
